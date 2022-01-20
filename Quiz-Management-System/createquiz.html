@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styleqms.css">
+  <style>
+      body{  
+  background-image: url('quiz_dim.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  </style>
+</head>
+<body>
+
+<ul>
+  
+  <li><a href="">Log out</a></li>
+  <li><a href="welcome-teacher.html" style="border-left: 2px solid #bbb">Dashboard</a></li>
+  <li style="float:left "><a  href="homepage.html"><b>QMS</b></a></li>
+</ul>
+
+<form action="createquiz.php" method="post">
+  <div class="container" style="margin-bottom:10%">
+    <h1>Create Quiz</h1>
+    <p>Please fill this form to create a quiz.</p>
+    <hr>
+    <label for="qname"><b>Quiz Name</b></label>
+    <input type="text" placeholder="Enter Quiz name" name="qname" id="qname" required>
+    
+    <label for="num"><b>Number of questions</b></label>
+    <input type="text" placeholder="Enter number of questions" name="num" id="num" required>
+
+    <label for="marks"><b>Marks for each question</b></label>
+    <input type="text" placeholder="Enter marks for each question" name="marks" id="marks" required>
+
+    <button type="submit" class="registerbtn" style="margin:0 0">Create</button>
+  </div></div>
+</form>
+
+
+</body>
+</html>

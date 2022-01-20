@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styleqms.css">
+</head>
+<style>
+  body{  
+  background-image: url('quiz_dim.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  form{
+    margin-top:5%;
+  }
+</style>
+<body>
+
+<ul>
+  
+  
+  <li>
+    <div class="dropdown">
+      <button style="border-left: 2px solid #bbb" class="dropbtn">Register 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div  class="dropdown-content">
+        <a style="padding: 20px;float:left;" href="register-teacher.html">Register as Teacher</a>
+        <a style="padding: 20px;float:left;"href="register-student.html#">Register as Student</a>
+  </li>
+  
+ 
+  <li style="float:left "><a  href="homepage.html#"><b>QMS</b></a></li>
+  
+  
+</ul>
+<form action="loginteacherverify.php" method="GET">
+ 
+
+  <div class="container">
+    <h1>Login as Teacher</h1>
+    <label for="email"><b>Username</b></label>
+    <input type="text" placeholder="Enter email" name="email" id="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        
+    <button style="border-radius:5%" type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+  </div> 
+</ul>
+</form>
+</body>
+</html>

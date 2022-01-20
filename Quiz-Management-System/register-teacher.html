@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styleqms.css">
+</head>
+<style>
+  body{  
+  background-image: url('quiz_dim.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  </style>
+<body>
+
+<ul>
+  
+  
+  <li ><div class="dropdown">
+    <button style="border-left: 2px solid #bbb" class="dropbtn">Login 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div  class="dropdown-content">
+      <a style="padding: 20px;" href="login-teacher.html">Login as Teacher</a>
+      <a style="padding: 20px;"href="login-student.html">Login as Student</a>
+    </div></li>
+ 
+  <li style="float:left "><a  href="homepage.html"><b>QMS</b></a></li>
+  
+  
+</ul>
+
+    <form action="teacher.php" method="post">
+      <div class="container" style="margin-bottom:10%">
+        <h1>Register as Teacher</h1>
+        <p>Please fill this form to create an account.</p>
+        <hr>
+        <label for="fname"><b>First Name</b></label>
+        <input type="text" placeholder="Enter First name" name="fname" id="fname" required>
+        
+        <label for="lname"><b>Last Name</b></label>
+        <input type="text" placeholder="Enter First name" name="lname" id="lname" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <div>
+        <p>Already have an account? <a href="login-teacher.html">Login</a>.</p>
+        <hr>
+    
+        <button type="submit" class="registerbtn" style="margin:0 0">Register</button>
+      </div></div>
+    </form>
+    
+
+</body>
+</html>
